@@ -57,6 +57,7 @@ footer {
 
 .verticalCard {
 	background-color: whitesmoke;
+	margin-left: 200px;
 }
 
 .horizontalCard {
@@ -75,15 +76,10 @@ img {
 
 .horizontalCard h4,
 .horizontalCard p {
-	/* display: inline; */
-	/* float: right; */
-	/* display: inline-block;
-	text-align: center; */
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	margin: 50px 75px 5px 0;
-	/* margin-bottom: 5px; */
 }
 
 .horizontalCard p {
@@ -111,9 +107,6 @@ img {
 	margin-top: 0;
 	flex-direction: column;
 	align-items: flex-start;
-	/* display: grid;
-	grid-column-start: 1;
-	grid-row-start: 1; */
 }
 
 @media only screen and (max-width: 768px) {
@@ -138,7 +131,7 @@ img {
 	}
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 840px) {
 	body {
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: auto auto;
@@ -152,6 +145,9 @@ img {
 	/* main, */
 	header {
 		height: 100vh;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
 	}
 }
 
